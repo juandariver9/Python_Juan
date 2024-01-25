@@ -1,10 +1,8 @@
 #-----------------------------------------
 #--- Ejercicio 1 ---
 #-----------------------------------------
-
 #Impresión en consola
 print("Hello World"); # Imprime hola mundo en la consola
-
 # ------- Datos primitivos ------- 
 # 1. String
 texto = "Campus"
@@ -34,7 +32,6 @@ print("Tu nombre es", User)
 User = int(input("Digite su edad: "))
 print("Tu nombre es", User)
 
-
 #Ciclos
 #Ciclo for
 for i in range (5,10,2): #For contador in range (desde,hasta,pasos):
@@ -50,6 +47,29 @@ if texto1 == "Campuss":
     print("Si es")
 else:
     print("no es")
+
+# ------------------ Arrays ------------------------
+    #----------- Lista [] list()---------------------
+listao = list(["danna", "yolanda", "joel", "daniel"])
+print(listao[1])
+#--------------- Tupla() tuple() --------------------
+Tupla = tuple(("Manzana", "banana", "fresas"))
+print(Tupla)
+#--------------- Diccionario{} Dict() --------------------
+Diccionario = {
+    "Nombre": "Juan",
+    "Edad": "16",
+    "Apellido": "Rivero"
+}
+
+print(Diccionario)
+# conjunto set, estan en desorden y no se puede repetir un valor :)))))))))))))
+#para acceder a los datos del conjunto se utiliza un blucle :)))), denada
+
+   
+
+
+    
 
 
 #Desarrollado por Juan David Rivero Romero 1096701639
