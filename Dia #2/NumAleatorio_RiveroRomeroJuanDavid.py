@@ -19,9 +19,9 @@ for intento_actual in range(1, intentos_totales + 1):
             print(f"\n¡Felicidades! adivinaste el número secreto ({numero_secreto}) en {intento_actual} intentos :DD")
             break
         elif Hipotesis < numero_secreto:
-            print("El número secreto es mayor. Intenta de nuevo")
+            print("El número secreto es mayor intenta de nuevo")
         else:
-            print("El número secreto es menor. Intenta de nuevo")
+            print("El número secreto es menor intenta de nuevo")
 
     except:
         print("Ingrese un número valido")     
