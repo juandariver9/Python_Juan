@@ -21,3 +21,5 @@ while True:
     except:
         print("Ingrese un valor entero valido")
 #-----------------------------------------------------------------
+#Desarrollado por Juan David Rivero Romero 1096701639
+# :DDDD

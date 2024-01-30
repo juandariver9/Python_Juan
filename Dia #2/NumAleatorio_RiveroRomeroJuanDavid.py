@@ -27,3 +27,5 @@ for intento_actual in range(1, intentos_totales + 1):
         print("Ingrese un número valido")     
 else:
     print(f"\nJa! Perdiste :( El número secreto era {numero_secreto}")
+#Desarrollado por Juan David Rivero Romero 1096701639
+# :DDDD
