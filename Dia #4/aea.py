@@ -10,22 +10,21 @@ def encontrar_pares_divisibles(lista, k):
 
     return pares_divisibles
 
-def main():
-    T = int(input(" "))
-    pares_encontrados2 = []
-    for y in range(1, T + 1):
 
-        n, k = map(int, input(" ").split())
-        lista = list(map(int, input(" ").split()))
+T = int(input(" "))
+pares_encontrados2 = []
+for y in range(1, T + 1):
 
-        pares_encontrados = encontrar_pares_divisibles(lista, k)
-        
+    n, k = map(int, input(" ").split())
+    lista = list(map(int, input(" ").split()))
 
-        if pares_encontrados:
-            pares_encontrados2.append(len(pares_encontrados))
-        else:
-            print("No se encontraron pares que cumplan con las restricciones.")
-    for z in range(0, T, 1):
-        print(f"Caso #{z+1}: {pares_encontrados2[z]}")
+    pares_encontrados = encontrar_pares_divisibles(lista, k)
+    
 
-main()
+    if pares_encontrados:
+        pares_encontrados2.append(len(pares_encontrados))
+    else:
+        print("No se encontraron pares que cumplan con las restricciones.")
+for z in range(0, T, 1):
+    print(f"Caso #{z+1}: {pares_encontrados2[z]}")
+

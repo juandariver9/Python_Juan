@@ -56,7 +56,7 @@ print(listao) #Devuelve la lista completa
 print(len(listao)) #Cant de objetos en una lista, en este caso 4
 print(listao[1]) #Devuelve el valor alojado en la posición 1 (Yolanda)
 listao[3] = "Modificar" #Esto SI Es valido en el código
-
+3
 #--------------- Tupla() tuple() --------------------
 #Las tuplas no se pueden modificar, se quedan tal y como estan para siempre
 Tupla = tuple(("Manzana", "banana", "fresas"))

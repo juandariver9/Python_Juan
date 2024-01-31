@@ -10,22 +10,27 @@ def encontrar_pares(n, k, A):
             if par not in pares:
                 pares.append(par)
     return pares
-
-T = int(input("Ingrese el número de casos de prueba: "))
+Casos = []
+lista_separada = []
+lista_separada_numeros = []
+T = int(input("T: "))
 for t in range(T):
     # Leer el tamaño de la lista y el valor por el cual la suma debe ser divisible
-    n, k = map(int, input("Ingrese n y k: ").split())
+    nk = str(input(" "))
+    lista_separada = nk.split(" ")
+    caracteres_lista = len(lista_separada)
+    lista_separada[-1] = int(lista_separada[-1])
+    n = lista_separada[0]
+    n = int(n)
+    k = lista_separada[1]
+    k = int(k)
     
-    # Leer la lista de enteros
-    A = list(map(int, input("Ingrese la lista de enteros A: ").split()))
+    A = list(map(int, input(" ").split()))
     
     # Llamar a la función encontrar_pares con los parámetros dados
     pares = encontrar_pares(n, k, A)
     
     # Imprimir el número de pares encontrados para el caso de prueba actual
-    print("Caso", t+1, ":", len(pares))
-    
-    # Imprimir cada par encontrado en el formato especificado
-    for par in pares:
-        print("(", par[0], ",", par[1], ")", sep="", end=" ")
-    print()
+    Casos.append(len(pares))
+for z in range(0,T,1):
+    print(f"Caso #{z+1}: ",Casos[z])

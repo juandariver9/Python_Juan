@@ -15,14 +15,11 @@ for i in range(0,T,1):
     nk = str(input(f"n numeros y k de caso #{i+1} "))
     lista_separada = nk.split(" ")
     caracteres_lista = len(lista_separada)
-    #print(caracteres_lista) # Quitar luego
-    #print(lista_separada) # Quitar luego
     lista_separada[-1] = int(lista_separada[-1])
-    n = lista_separada[0] # Separar n de la lista nk
+    n = lista_separada[0]
     n = int(n)
     #print(n)
-    k = lista_separada[1] # Separar k de la lista nk
-    #print(k)
+    k = lista_separada[1]
     k = int(k)
     for j in range(0,caracteres_lista-1,1):
         numero = int(lista_separada[j])
