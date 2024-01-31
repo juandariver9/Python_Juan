@@ -31,6 +31,5 @@ for i in range(0,T,1):
     for l in range(0,lista_separada[0],1):
         numeros = int(input(f"#{l+1}: "))
         almacen.insert(0,int(math.fabs(numeros)))
-        almacen.sort()
         print(almacen) # Quitar luego
     #Separar listas en elementos de a 2
