@@ -28,18 +28,18 @@ for i in range(5):
             definitiva=definitiva+numerito
             if(numerito>notaMayor):
                 notaMayor=numerito
-            lista.append(numerito)    
+            lista.append(numerito)
     print(lista)
+        
     definitiva=calcular_definitiva(lista)
     print("Tu definitiva es:",definitiva)
+    
     if(definitiva<2):
         print("Perdiste tu vida.")
     elif (definitiva<3):
         print("Pues... todo bien...recupera")
-    elif(definitiva>4.5):
+    elif (definitiva >= 3 and definitiva < 4.5):
+        print("Pasaste!")
+    elif(definitiva>=4.5):
         print("Excelente estudiante! Sos ejemplar")
     print(lista)
-    if(lista.index(notaMayor)==2):
-        print("Tu nota mayor es:",((notaMayor*100)/40))
-    else:
-        print("Tu nota mayor es:",((notaMayor*100)/30))
