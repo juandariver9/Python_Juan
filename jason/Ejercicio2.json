@@ -1,0 +1,16 @@
+[
+  {
+    "id": 7,
+    "total": 5760,
+    "fecha": "2015-09-10",
+    "id_cliente": 2,
+    "id_comercial": 1
+  },
+  {
+    "id": 12,
+    "total": 3045.6,
+    "fecha": "2017-04-25",
+    "id_cliente": 2,
+    "id_comercial": 1
+  }
+]
