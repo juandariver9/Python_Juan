@@ -43,3 +43,8 @@ for i in range(5):
     elif(definitiva>=4.5):
         print("Excelente estudiante! Sos ejemplar")
     print(lista)
+    {
+        "Nombre" : "Juan",
+        "Apellido" : "Rivero",
+        "Edad" : 16
+    }
