@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "nombre": "Juan",
+    "apellido1": "Rivero",
+    "apellido2": "Romero",
+    "ciudad": "BUca",
+    "categor\u00eda": "15"
+  },
+  {
+    "Id": 2,
+    "nombre": "Juan",
+    "apellido1": "Rivera",
+    "apellido2": "Dalea",
+    "ciudad": "ba",
+    "categor\u00eda": "15"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "nombre": "Juan",
+    "edad": 16,
+    "ciudad": "Bucaramanga",
+    "intereses": [
+      "Comer",
+      "Dormir"
+    ]
+  },
+  {
+    "nombre": "Kenia",
+    "edad": 50,
+    "ciudad": "Vereda medellin",
+    "intereses": [
+      "Nada,Dormir,Molestar,Dormir"
+    ]
+  },
+  {
+    "nombre": "Ruben",
+    "edad": 80,
+    "ciudad": "Socorro",
+    "intereses": [
+      "Nada"
+    ]
+  },
+  {
+    "nombre": "Joel",
+    "edad": 12,
+    "ciudad": "Ruitoquealto",
+    "intereses": [
+      "Nada,Joder,Clasista"
+    ]
+  }
+]
