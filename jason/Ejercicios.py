@@ -122,14 +122,46 @@ for clients in ejercicio["ventas"]["clientes"]:
     EmpiezanP = NombresClientes.startswith("P")
     TerminanN = NombresClientes.endswith("n")
     if EmpiezanA == True and TerminanN == True:
-        NombreCompleto =  f"{clients['nombre']} {clients['apellido1']} "
-        ListaPersonas.append(NombreCompleto)
+        NombreC =  f"{clients['nombre']}"
+        ListaPersonas.append(NombreC)
     elif EmpiezanP == True:
-        NombreCompleto =  f"{clients['nombre']} {clients['apellido1']} "
-        ListaPersonas.append(NombreCompleto)
+        NombreC =  f"{clients['nombre']}"
+        ListaPersonas.append(NombreC)
         ListaPersonas = sorted(ListaPersonas)
 
 with open('Ejercicio8.json', 'w') as outfile:
     json.dump(ListaPersonas, outfile, indent=2)
 #---------------------------------------------------------
 #-----------------------Ejercicio 9-----------------------
+with open('aea.json', 'r') as file:
+    ejercicio = json.load(file)
+
+ListaPersonas = []
+
+for clients in ejercicio["ventas"]["clientes"]:
+    NombresClientes = str(clients["nombre"])
+    EmpiezanA = NombresClientes.startswith("A")
+    if EmpiezanA == True:
+        NombreC =  f"{clients['nombre']} "
+        ListaPersonas.append(NombreC)
+        ListaPersonas = sorted(ListaPersonas)
+
+with open('Ejercicio9.json', 'w') as outfile:
+    json.dump(ListaPersonas, outfile, indent=2)
+#---------------------------------------------------------
+#-----------------------Ejercicio 10-----------------------
+with open('aea.json', 'r') as file:
+    ejercicio = json.load(file)
+
+ListaRuiz = []
+
+for Comercials in ejercicio["ventas"]["comerciales"]:
+    NombresClientes = str(Comercials["apellido1"])
+    Ruiz = NombresClientes.startswith("Ruiz")
+    if Ruiz == True:
+        NombreC =  f"{Comercials['nombre']} {Comercials['apellido1']} "
+        ListaRuiz.append(NombreC)
+        ListaRuiz = sorted(ListaRuiz)
+
+with open('Ejercicio10.json', 'w') as outfile:
+    json.dump(ListaRuiz, outfile, indent=2)
