@@ -93,3 +93,43 @@ for comercial in ejercicio["ventas"]["comerciales"]:
 
 with open('Ejercicio6.json', 'w') as outfile:
     json.dump({"MayorComision": MayorComision}, outfile, indent=2)
+#---------------------------------------------------------
+#-----------------------Ejercicio 7-----------------------
+with open('aea.json', 'r') as file:
+    ejercicio = json.load(file)
+
+ListaSevilleros = []
+for clients in ejercicio["ventas"]["clientes"]:
+    ciudad = clients["ciudad"]
+    
+    if ciudad == "Sevilla":
+        IdNombreApellido = f"Id:{clients['id']} Nombre: {clients['apellido1']} {clients['nombre']}"
+        ListaSevilleros.append(IdNombreApellido)
+        ListaSevilleros = sorted(ListaSevilleros)
+
+with open('Ejercicio7.json', 'w') as outfile:
+    json.dump(ListaSevilleros, outfile, indent=2)
+#---------------------------------------------------------
+#-----------------------Ejercicio 8-----------------------
+with open('aea.json', 'r') as file:
+    ejercicio = json.load(file)
+
+ListaPersonas = []
+
+for clients in ejercicio["ventas"]["clientes"]:
+    NombresClientes = str(clients["nombre"])
+    EmpiezanA = NombresClientes.startswith("A")
+    EmpiezanP = NombresClientes.startswith("P")
+    TerminanN = NombresClientes.endswith("n")
+    if EmpiezanA == True and TerminanN == True:
+        NombreCompleto =  f"{clients['nombre']} {clients['apellido1']} "
+        ListaPersonas.append(NombreCompleto)
+    elif EmpiezanP == True:
+        NombreCompleto =  f"{clients['nombre']} {clients['apellido1']} "
+        ListaPersonas.append(NombreCompleto)
+        ListaPersonas = sorted(ListaPersonas)
+
+with open('Ejercicio8.json', 'w') as outfile:
+    json.dump(ListaPersonas, outfile, indent=2)
+#---------------------------------------------------------
+#-----------------------Ejercicio 9-----------------------
